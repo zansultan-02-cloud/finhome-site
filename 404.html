@@ -1,0 +1,15 @@
+<!doctype html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <title>FinHome</title>
+    <!-- GitHub Pages не умеет в client-side роутинг: сохраняем запрошенный путь
+         в sessionStorage и редиректим на index.html, который его восстановит. -->
+    <script>
+      var path = location.pathname + location.search + location.hash;
+      sessionStorage.redirect = path;
+      location.replace('/finhome-site/');
+    </script>
+  </head>
+  <body></body>
+</html>
