@@ -1,0 +1,31 @@
+<!doctype html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="%BASE_URL%favicon.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>FinHome — ипотечный калькулятор</title>
+  <meta
+    name="description"
+    content="FinHome — удобный ипотечный калькулятор для предварительного расчета суммы займа, ставки, срока и ежемесячного платежа."
+    />
+  <!-- GitHub Pages SPA redirect trick: восстанавливаем путь, сохранённый 404.html -->
+  <script>
+    (function () {
+      var redirect = sessionStorage.redirect;
+      delete sessionStorage.redirect;
+      if (redirect && redirect !== location.href) {
+        history.replaceState(null, '', redirect);
+      }
+    })();
+  </script>
+  </head>
+  <body>
+    <div id="root"></div>
+    <script type="module" src="/src/main.tsx"></script>
+  </body>
+</html>
+
+  </body>
+  </script></title>
+  </head>
